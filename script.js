@@ -102,3 +102,23 @@ audio.play();
 };
 
 toggleButton.addEventListener('click', togglePlay);
+
+// copy text
+const copyButton = document.getElementById('copyButton');
+const textToCopy = document.getElementById('textToCopy');
+
+copyButton.addEventListener('click', function() {
+  const text = textToCopy.innerText;
+  const textarea = document.createElement('textarea');
+  textarea.value = text;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+
+  // Optional: Provide user feedback
+  copyButton.innerText = 'Copied!';
+  setTimeout(function() {
+    copyButton.innerText = 'Copy Rekening';
+  }, 2000);
+});

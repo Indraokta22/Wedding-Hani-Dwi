@@ -159,7 +159,7 @@
 }
 
 .female-container {
-    width: 45%;
+    width: 600px;
     overflow: hidden;
     border-bottom-right-radius: 150px;
     z-index: 1;
@@ -219,10 +219,11 @@
     background-color: var(--primary-color);
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
 }
 
 .male-container {
-    width: 45%;
+    width: 600px;
     overflow: hidden;
     border-top-left-radius: 150px;
     z-index: 1;
@@ -243,11 +244,7 @@
 }
 
 .bio-container-male {
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: auto;
     z-index: 1;
-    margin-left: 230px;
 }
 
 .bio-container-male h2 {
@@ -400,7 +397,7 @@
 
 .quote-text p {
     color: var(--highlight);
-    font-size: 1.1rem;
+    font-size: 1rem;
     width: 60%;
     margin-right: auto;
     margin-left: auto;
@@ -578,6 +575,34 @@
     padding: 5px;
 }
 
+.gift-a {
+    background-color: var(--fourth-color);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.gift-a h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.gift-a h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.gift-a button {
+    border: none;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 25px;
+    color: var(--highlight);
+}
+
 .gift a {
     color: var(--secondary-color);
     margin-right: 9px;
@@ -646,7 +671,7 @@ footer {
 .logo-container {
     margin-top: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
@@ -660,6 +685,17 @@ footer {
 
 .logo-A img {
     width: 90px;
+}
+
+.logo-B {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-B img {
+    width: 120px;
 }
 
 .social {
@@ -815,24 +851,37 @@ audio {
 
     .D {
         padding-bottom: 30px;
+        flex-direction: row-reverse;
     }
 
     .male-container {
         width: 60%;
-        right: 0;
-        margin-left: 150px;
     }
 
     .bio-container-male {
-        margin-top: auto;
-        margin-bottom: auto;
-        margin-right: auto;
-        z-index: 1;
-        margin-left: 0;
-        padding-left: 20px;
+        margin-right: 20px;
+        width: 500px;
+        z-index: 2;
+        text-align: end;
     }
 
     .bio-container-male h2 {
+        color: var(--highlight);
+    }
+
+    .icon-male {
+        display: flex;
+        background-color: var(--third-color);
+        width: 40px;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 8px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    
+    .icon-male a {
         color: var(--highlight);
     }
 
