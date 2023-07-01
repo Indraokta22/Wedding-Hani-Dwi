@@ -780,7 +780,7 @@ footer {
     align-items: center;
 }
 
-.cta .icon {
+.cta .icon-m {
     color: var(--highlight);
     margin-right: 10px;
 }
